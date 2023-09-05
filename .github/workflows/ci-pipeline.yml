@@ -51,4 +51,9 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t test:test
+        docker build -t test:test .
+    
+    - name: Push Docker Image
+      run: |
+        docker login -u $USER -p $PASSWORD https://hub.docker.com/u/aleja17
+        docker push test:test
