@@ -26,7 +26,11 @@ jobs:
       run: npm run lint
       working-directory: codebase/rdicidr-0.1.0
 
-    - name: Formatter (Prettier)
+    - name: Formatter install (Prettier)
+      run: npm install -g prettier
+      working-directory: codebase/rdicidr-0.1.0
+
+    - name: run Pretttier
       run: npm run prettier
       working-directory: codebase/rdicidr-0.1.0
 
