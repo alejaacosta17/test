@@ -2,7 +2,7 @@
 FROM node:14
 
 # Set the working directory in the container
-WORKDIR /src
+WORKDIR /codebase/rdicidr-0.1.0/src
 
 # Copy package.json and package-lock.json to the container
 COPY package*.json ./
@@ -17,5 +17,5 @@ COPY . .
 EXPOSE 3000
 
 # Define the command to run your application
-CMD ["npm", "run"]
+CMD ["node", "App.js"]
 
