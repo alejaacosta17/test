@@ -2,7 +2,7 @@
 FROM node:15
 
 # Set the working directory in the container
-WORKDIR /codebase/rdicidr-0.1.0/src
+WORKDIR /app
 
 # Copy package.json and package-lock.json to the container
 COPY package*.json ./
